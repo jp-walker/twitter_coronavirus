@@ -32,8 +32,8 @@ for k,v in items:
     print(k,':',v)
 
 # creating the dataset
-keys = list(counts["_all"].keys())[:10]
-values = list(counts["_all"].values())[:10]
+keys = sorted(list(counts["_all"].keys())[:10])
+values = sorted(list(counts["_all"].values())[:10])
 fig = plt.figure(figsize = (10, 5))
 # creating the bar plot
 plt.bar(keys, values, width = 0.4)
