@@ -35,9 +35,7 @@ else:
     cutoff = len(items)
 
 names = [items[i][0] for i in range(cutoff)][::-1]
-print(names)
 values = [items[i][1] for i in range(cutoff)][::-1]
-print(values)
 plt.bar(names, values, width = 0.4)
 plt.xlabel("X axis")
 plt.ylabel("Y axis")
